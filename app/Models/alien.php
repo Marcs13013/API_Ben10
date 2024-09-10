@@ -11,6 +11,8 @@ class alien extends Model
 
     protected $fillable = [
         'nomeAlien',
+        'nomeEspecie',
         'origemAlien',
+        'omnitrix',
     ];
 }

@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('aliens', function (Blueprint $table) {
             $table->id();
             $table->string('nomeAlien');
+            $table->string('nomeEspecie');
             $table->string('origemAlien');
+            $table->string('omnitrix');
         });
     }
 

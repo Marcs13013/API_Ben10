@@ -8,8 +8,8 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/', function(){return response()->json(['Sucesso'=>true]);});
-Route::get('/Aliens',[AlienController::class,'index']);
-Route::get('/Aliens/{codigo}',[AlienController::class,'show']);
-Route::post('/Aliens',[AlienController::class,'store']);
-Route::put('/Aliens/{codigo}',[AlienController::class,'update']);
-Route::delete('/Aliens/{codigo}',[AlienController::class,'destroy']);
+Route::get('/aliens',[AlienController::class,'index']);
+Route::get('/aliens/{codigo}',[AlienController::class,'show']);
+Route::post('/aliens',[AlienController::class,'store']);
+Route::put('/aliens/{codigo}',[AlienController::class,'update']);
+Route::delete('/aliens/{codigo}',[AlienController::class,'destroy']);
